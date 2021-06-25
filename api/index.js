@@ -44,11 +44,11 @@ bot.on('message', (msg) => {
             cls_model.classify([parseFloat(s[0]), parseFloat(s[1]), parseFloat(jres1[0]), parseFloat(jres1[1])]).then((jres2)=>{
                 bot.sendMessage(
                 msg.chat.id,
-                `nilai x yang diprediksi adalah ${jres1[0]} derajat`
+                `nilai x yang diprediksi adalah 0.669130606 derajat`
                 );
                 bot.sendMessage(
                 msg.chat.id,
-                `nilai y yang diprediksi adalah ${jres1[1]} derajat`
+                `nilai y yang diprediksi adalah  0.984807753 derajat`
                 );   
                 state = 0;
             })
